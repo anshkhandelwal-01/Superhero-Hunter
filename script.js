@@ -1,6 +1,6 @@
 // Establish link with Marvel.com through MD5 of Timestamp, Public and Private Key and fetching some characters for home page.
 
-fetch('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8')
+fetch('https://gateway.marvel.com/v1/public/characters?ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8')
     .then((response) => response.json())
     .then((res) => {
         console.log(res);
@@ -27,7 +27,7 @@ function searchHero(e) {
     document.getElementById("heros").innerHTML = "";
     const val = document.getElementById("searchSuperHero").value;
     if (val != null) {
-        fetch(`http://gateway.marvel.com/v1/public/characters?nameStartsWith=${val}&ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8`)
+        fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${val}&ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8`)
             .then((response) => response.json())
             .then((res) => {
                 console.log(res);

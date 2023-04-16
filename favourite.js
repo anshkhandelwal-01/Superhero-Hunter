@@ -14,7 +14,7 @@ for(let i=0;i<100;i++){
 
 function getheros(fsh) {
   for (let i = 0; i < fsh.length; i++) {
-      fetch(`http://gateway.marvel.com/v1/public/characters/${fsh[i]}?ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8`)
+      fetch(`https://gateway.marvel.com/v1/public/characters/${fsh[i]}?ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8`)
           .then((response) => response.json())
           .then((res) => {
               renderFavouriteHeros(res);

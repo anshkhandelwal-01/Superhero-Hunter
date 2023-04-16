@@ -9,7 +9,7 @@ abouthero(item_id);
 // Function to fetch the character whose details has to be displayed
 
 function abouthero(item_id) {
-        fetch(`http://gateway.marvel.com/v1/public/characters/${item_id}?ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8`)
+        fetch(`https://gateway.marvel.com/v1/public/characters/${item_id}?ts=1&apikey=363d61f78e3d30b66fd174058922c390&hash=764574c500b818f5dce961daec5651c8`)
             .then((response) => response.json())
             .then((res) => {
                 renderSuperHeros(res);
