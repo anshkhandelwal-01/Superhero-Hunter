@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color:deepskyblue;
+    color: black;
+    height: auto;
+}
+
+/* Styling for Home Page along with common styling for different pages */
+
+h1{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#body{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-body{
+    width: 70vw;
+}
+
+.box ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 2px dashed black;
+}
+
+.box ul li{
+    padding: 10px;
+    transition: transform .2s;
+}
+
+.box ul li:hover{
+    transform: scale(1.2);
+}
+
+.box ul li p{
+    text-align: center;
+}
+
+footer{
+    margin-top: -20px;
+    color: white;
+    text-align: center;
+    height: 60px;
+    padding-top: 15px;
+}
+
+#aside{
+    width: 30vw;
+    margin: 10px;
+}
+
+#aside ul{
+    list-style: none;
+    margin-left: -30px;
+}
+
+#aside ul li{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: beige;
+    transition: transform .2s;
+}
+
+#aside ul li:hover{
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+#aside ul li a{
+    color: black;
+}
+
+#aside ul li button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Styling for Favourite Super Hero Page */
+
+#myFavourites{
+min-height: 473px;
+border-right: none;
+}
+
+#myFavourites button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Styling for Super Hero Page */
+
+#flexbox{
+    display: flex;
+    margin-bottom: 16px;
+    min-height: 473px;
+    padding: 5px 0 7px 2px;
+}
+
+#flexbox img{
+    border: 2px solid black;
+}
+
+#flexbox ul{
+    margin-left: 0px;
+    list-style: none;
+}
+
+#flexbox ul li{
+    border-bottom: 1px dashed black;
+    padding: 2px 0;
+    margin-bottom: 10px;
+}
